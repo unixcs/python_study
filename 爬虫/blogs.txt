@@ -1,0 +1,32 @@
+摘要：            
+前言 有时候不妨思考一下 花同样的时间去学习~ 学渣和学霸和学神之间 为什么差距总是那么大？ 🤔 关于学习效率方式方法 不得不学习总结一下！ 方法 记忆串联 ：把知识点和东西串联在一起，睹物思知识点~ 知识输出 (传授给别人) 学习方法 番茄学习法 :学习25分钟 休息5分钟(休息期间不能做任何关        阅读全文
+摘要：
+介绍 setuptools是python自带的用来构建包的工具，构建出来的wheel(.whl)可供其他人pip install和import。 开始 ├── fanuc_pkg │ ├─── fanuc.py │ ├─── init.py │ └─── main.py ├── LICENSE ├─        阅读全文
+摘要：
+树莓派 准备工作 树莓派3b+ sd卡 16G or 32G 网线(RJ45) or 显示器(hdmi) 安装ubuntu 使用 SD Card Formatter 工具格式化 SD卡 下载(树莓派专用) ubuntu 服务器版 镜像 （这里我下载的是ubuntu服务器 纯命令行界面的，如果需要图形        阅读全文
+摘要：
+前言 win10 镜像安装 PE安装        阅读全文
+摘要：
+硬件科普 主板 PCIe PCIe：超高速串行总线 PCIe在主板上以 接口 和 通道 两种形式存在 接口 槽 显卡槽 PCIe接口的(固态、无线网卡、有线网卡、视频采集卡) 转接口 PCIe转M2 PCIe转type-c PCIe转usb 通道 M.2接口 （数据传输依赖PCIe通道） 雷电接口         阅读全文
+摘要：
+系统信息 cat /proc/version # 系统的版本信息 Linux version 5.4.0-1028-raspi (buildd@bos02-arm64-020) # linux内核版本号 gcc version 9.3.0 # gcc编译器版本号 Ubuntu 9.3.0-17ubu        阅读全文
+摘要：
+起因 使用安装ubuntu 的时候总是黑屏 解决 选择稍后安装系统 新建完虚拟机后，手动选择镜像 关闭 加速3D图形 拓展 安装vmware tools：https://blog.csdn.net/blessed_sy/article/details/81173746        阅读全文
+摘要：
+前言 每次配置好ubuntu 都要修改源，使用apt更新软件包。 但一直都是囫囵吞枣，不是很理解。今天就好好的研究一二～ 介绍 Ubuntu采用集中式的软件仓库机制，将各式各样的软件包分门别类地存放在软件仓库中，进行有效地组织和管理。然后，将软件仓库置于许许多多的镜像服务器中，并保持基本一致。 这样        阅读全文
+摘要：
+起因 昨天脑子一热在硬盘上多分了一盘，裝了ubuntu20.04 中间走了不少弯路 安装系统、 准备工作： ubuntu镜像 写入工具（软碟通/rufus） 电脑里一共三块硬盘（2ssd+1hdd）由于一块ssd是nvme协议，可是我的bios识别不出来，所以不能当系统盘。(在网上看到可以刷bios        阅读全文
+摘要：
+前言 使用python 调用Fanuc的动态链路库.so 文件读取数据 环境要求 环境 需求 ubuntu16.04 32位 python3.5 32位 配置 把so文件添加到默认路径 ln -s /path/xxx.so /usr/lib (path = 存放so文件的绝对路径) 编译so文件 g        阅读全文
+摘要：
+前言 好久没写博客了，今天水一下 如何在win10 下添加一个全局唤醒的快捷键(打开截图软件) 步骤 win + Q 输入 管理工具 添加快捷方式 这里没有管理员权限，可以直接把创建好的 快捷方式 粘贴进来        阅读全文
+摘要：
+起因 pyqt5程序创建桌面快捷方式后，多次单击图标 会打开多个UI界面，这种情况肯定是不允许的！ 解决 if __name__ == '__main__': try: app = QtWidgets.QApplication(sys.argv) serverName = 'testServer'         阅读全文
+摘要：
+前言 使用pyqt5 添加菜单栏 单击菜单栏 弹出信息框(MessageBox用法) 菜单栏 功能 Action是Qt中单独引入的一个对象，对应QAction类。Action表示一个独立的操作，是将界面上某个可以通过菜单、快捷键、toolBar按钮执行的同一个操作映射到同一个Action对象，由该对        阅读全文
+摘要：
+起因 旧安卓手机(小米5) 改造成服务器 开始 准备工作 小米5手机 下载Busybox busybox提供linux下基本的操作命令,也包含了 Android 系统的自带的shell Linux deploy Linux Deploy 是一个在 Android 上运行的 chroot 容器 工作流        阅读全文
+摘要：
+前言 获取root权限，解锁system 步骤 手机设置 设置——更多设置——开发者选项——USB调试给打开 电脑操作 打开cmd adb devices 执行命令 adb root && adb disable-verity && adb reboot 手机会自动重启 参考： https://ww        阅读全文
+摘要：
+起因 折腾一下老手机 名词解释 名称 内容 含义 REC Recovery的缩写 Android出厂时自带的恢复模式 (理解为win PE) 双清 data，cache 用户数据+系统缓存 三清 data，cache， dalvik cache 用户数据+系统缓存+安卓虚拟机缓存 四清 data，c        阅读全文
